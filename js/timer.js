@@ -4,9 +4,9 @@ $(function () {
 
 var scrollPositions = [
     { position: 0, timeout: 10000 },
-    { position: 13300, timeout: 5000 },
-    { position: 14147, timeout: 8000 },
-    { position: 15380, timeout: 8000 },
+    { position: 13300, timeout: 2000 },
+    { position: 14147, timeout: 4000 },
+    { position: 15380, timeout: 5000 },
     { position: 15570, timeout: 27000 },
     { position: 15680, timeout: 4000 },
     { position: 15870, timeout: 3000 },

@@ -1,0 +1,1142 @@
+*
+{
+    padding: 0;
+    margin:0;
+}
+.scroll-button {
+    z-index: 9999999;
+    position: fixed;
+    top: 110px;
+    right: 0;
+    transform: rotate(90deg);
+}
+.scroll-button button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+body{
+ height: auto;
+ /* overflow: hidden; */
+ scroll-behavior: smooth;
+ font-family: 'Montserrat', sans-serif;
+}
+body,html{
+    overflow: hidden;
+    scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+}
+.body{
+      background-image: url(../image/pitch-black.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+/* body::-webkit-scrollbar {
+    display: none;
+} */
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.video-wrap {
+    position: relative;
+    padding-bottom: 0;
+    padding-top: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100vh;
+}
+    .video-wrap video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+    .screen1 {
+    height: 100vh;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* position: fixed; */
+}
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.load{
+  /* position: fixed; */
+  width: 100%;
+  top:0px;
+}
+.setScroll{
+    height: 21000px;
+    display: none;
+}
+
+.screen2 {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 2s;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.screen3 {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.screen4 {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.screen5 {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.screen6 {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.screen7 {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.8s;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+img.garden2{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    height: auto;
+}
+img.garden3{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    height: auto;
+    z-index: 1;
+}
+img.garden3a{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    height: auto;
+    z-index: 1;
+}
+img.garden4{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    bottom: -4px;
+    visibility: hidden;
+    opacity: 0;
+    height: auto;
+    z-index: 2 !important;
+}
+img.garden5{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    bottom: -4px;
+    visibility: hidden;
+    opacity: 0;
+    height: auto;
+      z-index: 2 !important;
+}
+img.garden6{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    bottom: -4px;
+    visibility: hidden;
+    opacity: 0;
+    height: auto;
+      z-index: 3 !important;
+}
+img.garden7{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    bottom: -4px;
+    visibility: hidden;
+    opacity: 0;
+    height: auto;
+      z-index: 3 !important;
+}
+img.garden1{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    bottom: 0;
+    /* visibility: hidden;
+    opacity: 0; */
+    height: auto;
+    z-index: 2;
+}
+.dot{
+  width: auto;
+  height: 240px;
+  position: absolute;
+  left:78%;
+  margin-top: 77px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+.dot img{
+    height: 240px;
+    width: auto;
+}
+.dot9{
+  width: auto;
+  height: 200px;
+  position: absolute;
+  left:78%;
+  transition: 0.2s !important;
+}
+.dot9 img {
+    height: 230px;
+    width: auto;
+}
+.dot9a{
+  width: auto;
+  height: 200px;
+  position: absolute;
+  left:78%;
+  transition: 0.2s !important;
+}
+.dot9a img {
+    height: 230px;
+    width: auto;
+}
+
+.dot10{
+  width: auto;
+  height: 200px;
+  position: absolute;
+  left:78%;
+  transition: 0.8s;
+}
+/* .dot10 img{
+    height: 200px;
+    width: auto;
+    position: relative;
+    bottom: 8px;
+} */
+ .dot10 img{
+    height: 200px;
+    width: auto;
+    position: relative;
+    bottom: -7px;
+    z-index: 1;
+    transition:all 0.8s;
+} 
+.box1{
+    height: 50px;
+    width: auto;
+    transition:all .2s;
+}
+.box2{
+    height: 50px;
+    width: auto;
+    transition:all .2s;
+}
+.box3{
+    height: 50px;
+    width: auto;
+    transition:all .2s;
+}
+.box4{
+    height: 50px;
+    width: auto;
+    transition:all .2s;
+}
+.box5{
+    height: 50px;
+    width: auto;
+    transition:all .2s;
+}
+.box6{
+    height: 50px;
+    width: auto;
+    transition:all .2s;
+}
+.dot3{
+  width: auto;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+.dot3 img{
+    height: 240px;
+    width: auto;
+    transition:all 2s;
+}
+.dot4{
+  width: auto;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+.dot4 img{
+    height: 240px;
+    width: auto;
+    transition:all 2s;
+}
+.dot5{
+  width: auto;
+  height: 200px;
+  position: absolute;
+display: none;
+  transition: 0.8s;
+}
+.dot5 img{
+    height: 300px;
+    width: auto;
+    transition:all 2s;
+}
+.parcuite1{
+    height: 100px;
+    width: auto;
+    display: none;
+    position: absolute;
+    transition:all 2s;
+}
+.parcuite2{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+    transition:all 2s;
+}
+.parcuite2a{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+    transition:all 2s;
+}
+.parcuite3{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+    transition: all 2s;
+}
+.parcuite4{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+    transition:all 2s;
+}
+.dot6{
+  width: auto;
+  height: 190px;
+  position: absolute;
+display: none;
+  transition: 0.8s;
+}
+.dot6 img{
+    height: 240px;
+    width: auto;
+    transition:all 2s;
+}
+.dot7{
+  width: auto;
+  height: 190px;
+  position: absolute;
+display: none;
+  transition: 0.8s;
+}
+.dot7 img{
+    height: 300px;
+    width: auto;
+    transition:all 2s;
+}
+.dot8{
+  width: auto;
+  height: 190px;
+  position: absolute;
+display: none;
+  transition: 0.8s;
+}
+.dot8 img{
+    height: 240px;
+    width: auto;
+    transition:all 2s;
+}
+.dot2{
+  width: auto;
+  height: 350px;
+  position: absolute;
+  left:auto;
+  margin-top: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+  z-index: 2 !important;
+}
+.dot2 img{
+    height: 300px;
+    width: auto;
+    transition:all 2s;
+}
+.baby-chair-image{
+  width: auto;
+  height: 280px;
+  position: absolute;
+  display: none;
+  transition:all 2s;
+  z-index: 1 !important;
+}
+.slotter{
+  width: auto;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 2s;
+}
+video::-webkit-media-controls-panel {
+display: none !important;
+opacity: 1 !important;}
+
+/* .screen2 img{
+    width: 100%;
+    height: 100%;
+} */
+img.img-fluid.absoluteTx {
+    height: 152px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 104px;
+    transition: all 2s;
+}
+img.img-fluid.graph {
+    height: 925px;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0px auto;
+    transition:all 2s;
+}
+
+img.rocket.img-fluid {
+    position: absolute;
+    bottom: 27.5%;
+    height: 210px;
+    left: 6%;
+    transition:all 2s;
+}
+
+.brainimg {
+    height: 200px;
+    width: auto;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition:all 2s;
+}
+.brainimg2 {
+    height: 200px;
+    width: auto;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition:all 2s;
+}
+.formulasimg {
+    height: 200px;
+    width: auto;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition:all 2s;
+}
+.sceintists{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all 2s;
+}
+.sceintists2{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all 2s;
+}
+.sceintists3{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all 2s;
+}
+.sceintists4{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all 2s;
+}
+.momgif
+{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all 2s;
+}
+.digital-sound
+{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+    margin-top: -80px;
+    transition:all 2s;
+}
+.digital-sound2
+{
+    height: 230px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all 0.2s;
+}
+.graph-part{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all 2s;
+}
+.sound2{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+}
+.baby-garph{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.graph-video{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.graph-video1{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.graph-video2{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.graph-video3{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.graph-video4{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.box1{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.box2{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.box3{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.box4{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.box5{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.box6{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+}
+.baby-flying{
+    height: 200px;
+    width: auto;
+    display: none;
+    position: absolute;
+    transition:all 2s;
+}
+.baby-chair{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all 2s;
+}
+.wheels{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all .8s;
+    bottom:20%;
+    top:auto !important;
+}
+.wheels2{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all .8s;
+    bottom:20%;
+    top:auto !important;
+}
+.text1{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all .8s;
+    bottom:30%;
+    top:auto !important;
+}
+.text2{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all .8s;
+    bottom:30%;
+    top:auto !important;
+}
+.baby-fall{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all 2s;
+}
+.mom-baby-final{
+    height: 200px;
+    width: auto;
+    visibility:hidden;
+    opacity:0;
+    position: absolute;
+    transition:all 2s;
+}
+.final-output{
+    position: absolute;
+    display: none;
+    transition:all 2s;
+}
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.buttons.select_songs {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: 0;
+}
+.box {
+    background: #EFEFEF;
+    border-radius: 9.0825px;
+    padding: 30px 15px;
+    min-height: 571px;
+}
+.box-fit{
+    width: 25%;
+    padding: 0 10px;
+}
+.box-image {
+    text-align: center;
+}
+.box-image img {
+    height: 80px;
+    width: auto;
+}
+.box-heading h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+.box-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding:10px 0;
+}
+button{
+ font-family: 'Montserrat', sans-serif;
+}
+.subscribe {
+    padding: 10px 0;
+}
+.buttons button {
+    background: #E3E3E3;
+    border-radius: 6.11803px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    margin: 15px 0;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.4);
+}
+button.subscribe {
+    background: #000000;
+    border-radius: 6.11803px;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    border: 1px solid;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+button.subscribe:hover {
+    background: #fff;
+    color: #000;
+}
+.buttons button:hover{
+  background: #4FDFAB;
+  color: #000;
+}
+.buttons a {
+    font-weight: 600;
+    padding: 0 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.buttons a:hover{
+    color: #4FDFAB;
+}
+ul.offers li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    min-height: 35px;
+    font-weight: 700;
+}
+
+ul.offers li:last-child {
+    margin: 0;
+}
+ul.offers li img {
+    width: 40px;
+    margin-right: 10px;
+}
+ul.offers li img.cross {
+    width: 20px;
+    padding: 10px;
+}
+button.one-year {
+    margin-left: 5px;
+}
+button.one-month {
+    margin-right: 5px;
+}
+.d-none{
+    display: none;
+}
+.songVid{
+    height: 369px;
+    width: auto;
+    display: none;
+    border-radius: 10px;
+}
+.select_songs{
+    display: none;
+}
+.playVideo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    background: #0000008f;
+    transition: all 2s;
+}
+.playVideo p {
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 100;
+    color: #fff;
+    font-family: 'Cherry Bomb One', cursive;
+    text-shadow: 3px 7px #000000f2;
+}
+.playVideo img {
+    height: 250px;
+    position: absolute;
+    top: 200px;
+}
+.sigma_video-popup {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #005f89;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.sigma_video-popup::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation-name: pulseInOut;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.sigma_video-popup::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation-name: pulseInOutSM;
+    opacity: 0;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes pulseInOut{
+  0%{opacity:1;transform:scale(.3)}
+  100%{opacity:0;transform:scale(1.3)}
+}
+@keyframes pulseInOutSM{
+  0%{opacity:1;transform:scale(.3)}
+  100%{opacity:0;transform:scale(1.7)}
+}
+.overlay-mobile {
+    position: absolute;
+    background: #000000b3;
+    width: auto;
+    height: 100%;
+    top: 0;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    border-radius: 8px;
+}
+.box-fit {
+    width: 25%;
+    padding: 0 10px;
+    position: relative;
+}
+.box-fit:last-child {
+    padding: 0 0 0 10px;
+}
+ul.wavs li:nth-child(2) {
+    margin: 20px 10px;
+}
+
+ul.wavs li {
+    display: block;
+    margin: 20px 0;
+}
+ul.wavs li img {
+    height: 50px;
+}
+ul.wavs {
+    display: flex;
+    justify-content: space-around;
+}
+.box-fit {
+    width: 25%;
+    padding: 0 10px;
+    position: relative;
+    height: 100%;
+}
+.song-Videos {
+    position: relative;
+}
+.song-Videos button.playVideo2 {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
+
+/* Start a Css Responsive Part here  */
+@media(min-width: 1024px) and (max-width: 1199px){
+    .playVideo img {
+    height: 220px;
+    position: absolute;
+    top: 100px;
+}
+img.img-fluid.absoluteTx {
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    transition: all 2s;
+}
+.dot img {
+    height: 150px;
+    width: auto;
+}
+.dot1 img {
+    height: 150px;
+    width: auto;
+}
+.dot2 img {
+    height: 150px;
+    width: auto;
+}
+.dot3 img {
+    height: 150px;
+    width: auto;
+}
+.dot4 img {
+    height: 150px;
+    width: auto;
+}
+.dot5 img {
+    height: 150px;
+    width: auto;
+}
+.dot6 img {
+    height: 150px;
+    width: auto;
+}
+.dot7 img {
+    height: 150px;
+    width: auto;
+}
+.dot8 img {
+    height: 150px;
+    width: auto;
+}
+.dot9 img {
+    height: 150px;
+    width: auto;
+}
+.dot{
+    height: auto !important;
+    width: auto;
+}
+.dot1{
+    height: auto !important;
+    width: auto;
+}
+.dot2{
+    height: auto !important;
+    width: auto;
+}
+.dot3{
+    height: auto !important;
+    width: auto;
+}
+.do4{
+    height: auto !important;
+    width: auto;
+}
+.dot5{
+    height: auto !important;
+    width: auto;
+}
+.dot6{
+    height: auto !important;
+    width: auto;
+}.dot7{
+    height: auto !important;
+    width: auto;
+}.dot8{
+    height: auto !important;
+    width: auto;
+}
+.dot9{
+    height: auto !important;
+    width: auto;
+}
+}
+@media(min-width: 1200px) and (max-width: 1400px){
+    .playVideo img {
+    height: 220px;
+    position: absolute;
+    top: 100px;
+}
+img.img-fluid.absoluteTx {
+    height: 140px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 70px;
+    transition: all 2s;
+}
+.dot img {
+    height: 150px;
+    width: auto;
+}
+.dot1 img {
+    height: 150px;
+    width: auto;
+}
+.dot2 img {
+    height: 150px;
+    width: auto;
+}
+.dot3 img {
+    height: 150px;
+    width: auto;
+}
+.dot4 img {
+    height: 150px;
+    width: auto;
+}
+.dot5 img {
+    height: 150px;
+    width: auto;
+}
+.dot6 img {
+    height: 150px;
+    width: auto;
+}
+.dot7 img {
+    height: 150px;
+    width: auto;
+}
+.dot8 img {
+    height: 150px;
+    width: auto;
+}
+.dot9 img {
+    height: 150px;
+    width: auto;
+}
+}
+
+
+
+@media(min-width: 1401px) and (max-width: 1600px){
+    .playVideo img {
+    height: 240px;
+    position: absolute;
+    top: 150px;
+}
+}
+/* End  */
+
